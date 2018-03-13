@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.producto.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/rounded_white"
+        android:hint="Enter your full name here"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/user_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/name"
+        android:layout_marginTop="20sp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/rounded_white"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/email_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/userEmail"
+        android:layout_marginTop="80sp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="15sp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/rounded_white"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/password_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/password"
+        android:layout_marginTop="140sp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_white"
+        android:hint="Confirm Password"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/password_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/confirmPassword"
+        android:layout_marginTop="200sp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="40sp"
+        android:inputType="phone"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/rounded_white"
+        android:hint="Contact No."
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/contact_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/Contact"
+        android:layout_marginTop="260sp"/>
+
+    <TextView
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="355sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_white"
+        android:text="    Are you a..."
+        android:textSize="25sp"
+        android:layout_marginTop="320sp"
+        android:drawablePadding="10sp"
+        android:id="@+id/are_u_a"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="0sp"
+        android:orientation="vertical"
+        android:layout_marginTop="380sp"
+        android:id="@+id/radioGroup">
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:layout_marginLeft="10sp"
+        android:background="@drawable/rounded_white"
+        android:text="Consumer"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@+id/are_u_a"
+        android:layout_centerHorizontal="true" />
+
+
+    <RadioButton
+
+        android:id="@+id/radioButton2"
+        android:layout_width="300sp"
+        android:layout_marginTop="15sp"
+        android:layout_height="35sp"
+        android:layout_marginLeft="10sp"
+        android:background="@drawable/rounded_white"
+        android:text="Seller"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignEnd="@+id/are_u_a" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="270sp"
+        android:layout_height="50sp"
+        android:background="@drawable/rounded_button"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="480dp" />
+
+</RelativeLayout>

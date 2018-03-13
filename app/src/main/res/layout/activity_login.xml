@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.producto.LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="30sp"
+        android:layout_marginLeft="500sp"
+        android:src="@drawable/lets_get_started"
+        android:layout_marginStart="36dp"
+        android:id="@+id/imageView2"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:layout_marginTop="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    
+    <AutoCompleteTextView
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/rounded_white"
+        android:hint="E-mail/Username"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/email_icon"
+        android:layout_marginTop="14sp"
+        android:drawablePadding="10sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userEmail" />
+
+    <AutoCompleteTextView
+
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:background="@drawable/rounded_white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawableLeft="@mipmap/password_icon"
+        android:drawablePadding="10sp"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_below="@+id/userEmail"
+        android:layout_alignStart="@+id/userEmail"
+        android:layout_marginTop="14sp" />
+
+    <CheckBox
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="11sp"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_toStartOf="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="30sp"
+        android:src="@drawable/tnc"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_alignEnd="@+id/autoCompleteTextView" />
+
+    <Button
+        android:layout_width="270sp"
+        android:layout_height="40sp"
+        android:background="@drawable/rounded_button"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:onClick="home"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:id="@+id/button" />
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:background="@drawable/google_login1"
+            android:layout_marginTop="43dp"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button"
+            android:layout_alignEnd="@+id/imageView3" />
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:background="@drawable/fb_login1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/button3"
+            android:layout_alignStart="@+id/button3" />
+
+</RelativeLayout>
+
+</RelativeLayout>
