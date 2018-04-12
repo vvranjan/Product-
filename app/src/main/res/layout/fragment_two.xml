@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/tab_bg"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.producto.Fragment2">
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/search_product"/>
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_marginLeft="50sp"
+        android:layout_height="20sp"
+        android:layout_marginTop="250sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tap_anywhere"/>
+
+</RelativeLayout>

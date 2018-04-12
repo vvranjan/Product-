@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.producto.MyProfile">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/first_rectangle"
+                android:id="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:background="@drawable/second_rectangle"
+                android:id="@+id/imageView9"
+                android:layout_below="@+id/imageView5"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="450sp"
+                android:background="@drawable/third_rectangle"
+                android:layout_below="@+id/imageView9"
+                android:layout_alignParentStart="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:background="@drawable/profile_icon"
+                android:id="@+id/imageView10"
+                android:layout_marginLeft="120sp"
+                android:layout_alignBottom="@+id/consumer_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="58dp" />
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/plus2"
+                android:id="@+id/plus"
+                android:layout_marginTop="210sp"
+                android:layout_marginLeft="220sp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Account"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="13sp"
+                android:id="@+id/textView2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textSize="20sp"
+                android:text=""
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="270sp"
+                android:id="@+id/consumer_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="My Tags"
+                android:background="@color/lightGray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tags"
+                android:layout_marginTop="335sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Search Products"
+                android:background="@color/lightGray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/products"
+                android:layout_marginTop="380sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Change My Location"
+                android:background="@color/lightGray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/location"
+                android:layout_marginTop="425sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Edit Profile"
+                android:background="@color/lightGray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/edit_profile"
+                android:layout_marginTop="470sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Log Out"
+                android:background="@color/lightGray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/log_out"
+                android:layout_marginTop="515sp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
